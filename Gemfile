@@ -2,9 +2,9 @@
 
 source 'https://rubygems.org'
 
-git_source(:github) { |repo_name| "https://github.com/#{repo_name}" }
+ruby '2.7.1'
 
-gem 'dotenv'
+git_source(:github) { |repo_name| "https://github.com/#{repo_name}" }
 
 gem 'dry-monads'
 gem 'dry-system'
@@ -29,5 +29,7 @@ group :development, :test do
   gem 'vcr'
   gem 'webmock'
 
-  gem 'rubocop'  
+  gem 'rubocop'
+
+  gem 'dotenv'
 end
